@@ -1,0 +1,34 @@
+/* TODO: consider creating <Button> and <GradientText> components */
+
+/* body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, ui-sans-serif,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+} */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+input, select, textarea {
+  border: none;
+  outline: none;
+  color: gray;
+}
+
+/* placeholder */
+input::placeholder,
+textarea::placeholder {
+  color: gray;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  opacity: 0;
+}
+
+.img-home{
+  background: #333;
+  background-size: cover;
+  background-position: center center;
+}
+

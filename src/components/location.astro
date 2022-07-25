@@ -1,0 +1,89 @@
+---
+import Locate from "./locate.astro";
+import Footer from "./footer.astro";
+---
+
+<section class="">
+  <!-- <svg
+    class="fill-current text-zinc-800"
+    viewBox="0 0 900 45"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="m0 4 50 3c50 3 150 9 250 13.7 100 4.6 200 8 300 4.3S800 10.7 850 5.3L900 0v45H0V4Z"
+      fill-rule="nonzero"></path>
+  </svg> -->
+  <div
+    class="w-full bg-gradient-to-b from-zinc-800 to-zinc-800 text-zinc-800 pb-20 pt-10"
+  >
+    <div class="max-w-6xl px-8 mx-auto lg:px-16">
+      <div id="faq" class="relative flex flex-col mt-16 lg:flex-row">
+        <div class="relative w-full space-y-3 lg:space-y-5 lg:w-1/2 lg:pr-4">
+          <Locate question="Bogotá D.C.">
+            Calle 26 # 92-32 oficina 2-109 Edificio Connecta Torre Wework<br />
+            Tel: (571) 786 85 23
+          </Locate>
+
+          <Locate question="Cali / Valle">
+            Carrera 101 No. 15-08 Barrio Ciudad Jardín<br />
+            Tel: 318 341 13 97
+          </Locate>
+        </div>
+
+        <!-- Right side of FAQs -->
+        <div
+          class="relative w-full mt-3 space-y-3 lg:mt-0 lg:space-y-5 lg:w-1/2 lg:pl-4"
+        >
+          <Locate question="Villavicencio / Meta">
+            Cra 24 # 5B-43 Oficina 207 Barrio La Alborada<br />
+            Cel: 3183411397
+          </Locate>
+
+          <Locate question="Quibdó / Chocó">
+            Cra 7 Nº 24-76 Ed. Don Pedro<br />
+            Cel: 3183411392
+          </Locate>
+        </div>
+        <div
+          class="relative w-full mt-3 space-y-3 lg:mt-0 lg:space-y-5 lg:w-1/2 lg:pl-4"
+        >
+          <Locate question="Popayán / Cauca">
+            Cra 7 Nº 1N – 28 Ed Edgar Negret Dueñas<br />
+            Tel: (57-2) 8331178
+          </Locate>
+
+          <Locate question="Cucutá / Nte de Santander">
+            Calle 10 BN N°. 4ª-18 Barrio El Bosque<br />
+            Tel: 3507872908
+          </Locate>
+        </div>
+      </div>
+      <Footer />
+    </div>
+  </div>
+  <!-- <svg
+    class="fill-current text-zinc-800 rotate-180 -mt-1"
+    viewBox="0 0 900 45"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="m0 4 50 3c50 3 150 9 250 13.7 100 4.6 200 8 300 4.3S800 10.7 850 5.3L900 0v45H0V4Z"
+      fill-rule="nonzero"></path>
+  </svg> -->
+</section>
+
+<script type="module">
+  const $faq = document.getElementById("faq");
+  $faq.querySelectorAll("button").forEach((button) => {
+    button.addEventListener("click", (event) => {
+      const { currentTarget } = event;
+      const svg = currentTarget.querySelector("svg");
+      const isClosed = svg.classList.contains("rotate-90");
+      currentTarget.nextElementSibling.classList.toggle("hidden", !isClosed);
+      const [from, to] = isClosed
+        ? ["rotate-90", "rotate-0"]
+        : ["rotate-0", "rotate-90"];
+      svg.classList.replace(from, to);
+    });
+  });
+</script>

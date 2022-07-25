@@ -1,0 +1,21 @@
+---
+import Layout from "../Layout/base.astro";
+import Header from "../components/header.astro";
+import People from "../components/people.astro";
+import Politicy from "../components/politicy.astro";
+import Slider from "@components/slider.astro";
+import Location from "../components/location.astro";
+---
+
+<Layout>
+  <Header
+    home="/#home"
+    energy="/#energy"
+    services="/#services"
+    contact="/#contact"
+  />
+  <People/>
+  <Politicy />
+  <Slider/>
+  <Location />
+</Layout>

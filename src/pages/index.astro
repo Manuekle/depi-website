@@ -1,0 +1,19 @@
+---
+import Layout from "../Layout/base.astro";
+import Header from "@components/header.astro";
+import Home from "@components/home.astro";
+import Services from "@components/services.astro";
+import Energy from "@components/energy.astro";
+import Contact from "@components/contact.astro";
+import Location from "@components/location.astro";
+---
+
+<Layout>
+  <Header home="#home" energy="#energy" services="#services" contact="#contact"
+  />
+  <Home />
+  <Services />
+  <Energy />
+  <Contact />
+  <Location />
+</Layout>

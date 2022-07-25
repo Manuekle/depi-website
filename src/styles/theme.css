@@ -1,0 +1,8 @@
+[data-theme="root"] {
+  --color-text: theme("colors.gray.900");
+  --color-text-offset: theme("colors.gray.200");
+  --color-background: theme("colors.gray.100");
+  --color-background-offset: theme("colors.gray.900");
+  --color-border: transparent;
+  /* gray.900 */
+}

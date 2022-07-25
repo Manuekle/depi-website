@@ -1,0 +1,40 @@
+{
+  "name": "depi",
+  "version": "0.5.0",
+  "private": true,
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "format": "prettier -w 'src/**/*.{js,jsx,ts,tsx,astro}'",
+    "lint:eslint": "eslint . --ext .js,.astro"
+  },
+  "devDependencies": {
+    "@astrojs/react": "^0.4.1",
+    "@astrojs/tailwind": "0.2.1",
+    "@types/react": "^18.0.12",
+    "@typescript-eslint/parser": "^5.30.5",
+    "astro": "1.0.0-beta.63",
+    "astro-eleventy-img": "^0.3.2",
+    "astro-icon": "^0.7.1",
+    "eslint": "^8.19.0",
+    "eslint-plugin-astro": "^0.14.0",
+    "prettier": "2.7.1",
+    "prettier-plugin-astro": "0.1.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "tailwindcss": "3.1.4",
+    "tailwindcss-fluid-type": "^1.3.3"
+  },
+  "dependencies": {
+    "@astrojs/renderer-react": "^0.5.0",
+    "animate.css": "^4.1.1",
+    "formik": "^2.2.9",
+    "micromodal": "^0.4.10",
+    "nuka-carousel": "^5.1.3",
+    "react-modal": "^3.15.1",
+    "swiper": "^8.3.1",
+    "yup": "^0.32.11"
+  }
+}

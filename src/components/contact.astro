@@ -1,0 +1,52 @@
+---
+import Form from "./jsx/FormComponent.jsx";
+---
+<section id="contact" class="relative w-full">
+  <div class="container mx-auto lg:pr-56 lg:pl-56 pr-10 pl-10 pt-28 pb-28">
+    <div class="grid grid-cols-2 ">
+      <div class="col-span-2 sm:col-span-2 lg:col-span-2 xl:col-span-2 2xl:col-span-1 lg:pb-10">
+        <h2 class="text-4xl font-black xl:text-5xl">Oficina Principal</h2>
+        <div
+          class="w-20 bg-gradient-to-r from-blue-800 to-blue-600 rounded-sm p-0.5"
+        >
+        </div>
+        <div class="pt-10 lg:pb-0 pb-10 lg:pr-20 pr-0">
+          <div class="flex flex-row justify-start items-center">
+            <img
+              src="https://cdn3d.iconscout.com/3d/premium/thumb/global-location-4733676-3946378.png"
+              alt="icono 5"
+              class="w-14"
+            />
+            <p class="pl-4">{" "}Calle 26 # 92-32, Edificio Connecta,<br/> Torre Wework oficina 2-138 - Bogota D.C.</p>
+          </div>
+          <br/>
+          <div class="flex flex-row justify-start items-center">
+            <img
+              src="https://cdn3d.iconscout.com/3d/premium/thumb/telephone-4757594-3975723.png"
+              alt="icono 6"
+              class="w-14"
+            />
+            <p class="pl-4">{" "}Tel: (571) 786 85 23</p>
+          </div>
+          <br/>
+          <div class="flex flex-row justify-start items-center">
+            <img
+              src="https://cdn3d.iconscout.com/3d/premium/thumb/website-3440970-2888144.png"
+              alt="icono 7"
+              class="w-14"
+            />
+            <p class="pl-4 underline decoration-sky-500">{" "}www.depisas.com</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-span-2 sm:col-span-2 lg:col-span-2 xl:col-span-2 2xl:col-span-1">
+        <h2 class="text-4xl font-black xl:text-5xl">Información de contacto</h2>
+        <div
+          class="w-20 bg-gradient-to-r from-blue-800 to-blue-600 rounded-sm p-0.5"
+        >
+        </div>
+        <Form client:load/>
+      </div>
+    </div>
+  </div>
+</section>
